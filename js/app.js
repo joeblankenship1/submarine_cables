@@ -4,7 +4,7 @@
     const map = L.map('map').setView([10, 0], 2);
 
     // Adding Voyager Basemap
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png', {
+    L.tileLayer('https://cartocdn_{s}.global.ssl.fastly.net/base-midnight/{z}/{x}/{y}.png', {
         maxZoom: 18
     }).addTo(map);
 
