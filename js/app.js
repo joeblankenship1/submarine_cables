@@ -10,7 +10,7 @@
 
     // Add your API information
     var client = new carto.Client({
-        apiKey: 'd7573ec5f513351fc6b35d0bb3ec4604908a5abc',
+        apiKey: 'default_public',
         username: 'thejoeblankenship'
     });
 
