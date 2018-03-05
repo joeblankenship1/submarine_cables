@@ -14,6 +14,11 @@ body {
     font-family: "Open sans", Helvetica, Arial, sans-serif;
 }
 
+p {
+    font-size: .9em;
+    line-height: 1.6em;
+}
+
 #container {
     display: flex;
     width: 100%;
@@ -28,22 +33,48 @@ body {
 #widgets {
     width: 300px;
     margin: 10px 10px 10px 0;
+    padding: 18px 12px;
+    background: #295b97;
+    color: white;
+    overflow-y: scroll;
+}
+
+#meta {
+    font-size: 80%;
+}
+
+#meta ul {
+    list-style-type: none;
+}
+
+#meta li {
+    margin-bottom: 6px;
+}
+
+#meta a {
+    color: #e0ecf9;
 }
 
 .widget {
-    background: #b4b4b4;
+    /* background: #b4b4b4;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 10px;*/
 }
 
 .widget h1 {
-    font-size: 1.2em;
-    margin: 5px
+    font-size: 1.3em;
+    font-weight: 400;
+    margin: 5px 5px 18px 5px;
 }
 
 .widget h2 {
-    font-size: 1em;
-    margin: 5px
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 12px 5px;
+}
+
+.widget p {
+    margin: 18px 0;
 }
 
 .widget select option {
@@ -79,4 +110,10 @@ body {
     background-color: #ff0000;
     border-radius: 50%;
     display: inline-block;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: #295b97;
+    color: white;
+    font-size: 1.1em;
 }
