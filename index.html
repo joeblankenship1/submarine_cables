@@ -20,14 +20,12 @@
         <div id="widgets">
             <div id="cablesWidget" class="widget">
                 <h1>Submarine Cable Map</h1>
-                <br>
                 <hr>
-                <br>
-                <p>This map shows the international active and planned submarine cable systems and their landing stations as collected and cataloged by TeleGeography's Global Bandwidth research.</p>
-                <p>The map shows cables with a maximum capacity of approximately 5 Gbps. The locations of the cables and landing points on the map does not reflect the actual infrastructure locations.</p>
-                <br>
-                <p>Select a cable owner from below to see their locations on the map. Hover over the map for additional information.</p>
-                <br>
+                <p>This map shows the international active and planned submarine cable systems and their landing stations as
+                    collected and cataloged by TeleGeography's Global Bandwidth research.</p>
+                <p>The map shows cables with a maximum capacity of approximately 5 Gbps. The locations of the cables and landing
+                    points on the map does not reflect the actual infrastructure locations.</p>
+                <p>Select a cable owner from below see their locations on the map. Hover over the map for additional information.</p>
                 <hr>
                 <div id="cableOwners" class="widget">
                     <h2>Cable Owners</h2>
@@ -35,22 +33,27 @@
                         <option value="">All</option>
                     </select>
                 </div>
-                <div>
-                    <div id="countWidget" class="widget widget-formula">
-                        <p class="result"><span class="js-count-cables">xxx</span> <small>Cables </small><span class="cables"></span></p>
-                        <p class="result"><span class="js-count-points">xxx</span> <small>Landing Points </small><span class="landingPoint"></span></p>
-                    </div>
-                    <div>
-                        <p>
-                            <small>Map author: <a href="https://thejoeblankenship.com" target="_blank">Joe Blankenship</a><br>
-                                Data and References <a href="https://github.com/telegeography/www.submarinecablemap.com" target="_blank">here</a><br>
-                                DoI: 22 February 2018<br>
-                            </small>
-                        </p>
-                    </div>
-                </div>
             </div>
-        </div>
+            <div id="countWidget" class="widget widget-formula">
+                <p class="result">
+                    <span class="js-count-cables">xxx</span>
+                    <small>Cables </small>
+                    <span class="cables"></span>
+                </p>
+                <p class="result">
+                    <span class="js-count-points">xxx</span>
+                    <small>Landing Points </small>
+                    <span class="landingPoint"></span>
+                </p>
+            </div>
+            <div id="meta">
+                <ul>
+                    <li>Map author: <a href="https://thejoeblankenship.com" target="_blank">Joe Blankenship</a></li>
+                    <li>Data and References <a href="https://github.com/telegeography/www.submarinecablemap.com" target="_blank">here</a></li>
+                    <li> DoI: 22 February 2018</li>
+                </ul>
+            </div>
+    </div>
 
         <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
         <script src="https://cartodb-libs.global.ssl.fastly.net/carto.js/v4.0.0-beta.20/carto.min.js"></script>
